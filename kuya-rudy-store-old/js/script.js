@@ -14,10 +14,15 @@ document.querySelectorAll('.variant-select').forEach((select) => {
 });
 
 document.querySelectorAll('.add-button').forEach((button) => {
+    const defaultHtml = button.innerHTML;
+
     button.addEventListener('click', () => {
         cartCount.textContent = Number(cartCount.textContent) + 1;
         button.classList.add('added');
         button.innerHTML = 'Added to basket <span>✓</span>';
-        setTimeout(() => button.classList.remove('added'), 900);
+        setTimeout(() => {
+            button.classList.remove('added');
+            button.innerHTML = defaultHtml;
+        }, 900);
     });
 });
