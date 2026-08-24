@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuya Rudy Store | Your neighborhood sari-sari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+    <!-- Updated CSS path -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Top Announcement Bar -->
+    <div class="announcement">
+        FREE LOCAL DELIVERY ON ORDERS OVER ₱200 <span>•</span> OPEN DAILY 7AM–9PM
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        
+        <!-- Tarpaulin Logo -->
+        <a href="#top" class="tarp-logo" aria-label="Kuya Rudy Store home">
+            <div class="tarp-top">
+                <div class="tarp-red-bar">
+                    <div class="tarp-tnt-logo">
+                        <span>TNT</span>
+                    </div>
+                    <div class="tarp-tnt-text">
+                        <div>LIPAT</div>
+                        <div>PANGMALAKASANG</div>
+                        <div>SIGNAGE</div>
+                    </div>
+                </div>
+                
+                <!-- NEW GCASH BOX -->
+                <div class="tarp-gcash-box">
+                    <div class="gcash-blue">
+                        <div class="gcash-brand">
+                            GCash
+                        </div>
+                        <div class="gcash-tag">AVAILABLE HERE</div>
+                    </div>
+                    <div class="gcash-white">
+                        CASH IN<br>CASH OUT
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tarp-bottom">
+                <div class="tarp-title">KUYA RUDY STORE</div>
+                <div class="tarp-subtitle">SARI-SARI STORE</div>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="cart-button" type="button" aria-label="Shopping cart">
+            Cart <span id="cart-count">0</span>
+        </button>
+    </header>
+
+    <main id="top">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Your typical sari sari store finds is here!</p>
+                <h1 id="hero-title">Small store.<br><em>Big convenience.</em></h1>
+                <p class="hero-text">Merienda, daily essentials, load, E-Wallet services, and more. Your neighborhood sari-sari store, now online.</p>
+                <a class="primary-button" href="#shop">Shop the shelf <span>↘</span></a>
+            </div>
+            <div class="hero-image-wrap">
+                <!-- Updated Image path -->
+                <img src="images/kuyarudy.jpg" alt="Javie Fababeir, owner of Kuya Rudy Store">
+                <div class="hero-sticker">BAWAL<br><strong>UTANG DITO</strong> ✦</div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="shop-section" id="shop" aria-labelledby="shop-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Fresh from the source</p>
+                    <h2 id="shop-title">Available Items / Services</h2>
+                </div>
+                <p class="section-note">Your essentials needs<br>your is here.</p>
+            </div>
+            
+            <div class="product-grid">
+                <article class="product-card product-coffee">
+                    <span class="product-tag">Best seller</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/nescafe/creamywhite.jpg" alt="Nescafe Creamy White 3-in-1">
+                    </div>
+                    <h3 class="variant-name">Nescafe Creamy White</h3>
+                    <p>instant coffees</p>
+                    <div class="product-info">
+                        <div>
+                            <label class="variant-label" for="nescafe-variant">Flavor</label>
+                            <select id="nescafe-variant" class="variant-select" name="nescafe-variant">
+                                <option value="creamywhite" data-image="images/nescafe/creamywhite.jpg" data-product-name="Nescafe Creamy White">Creamy White</option>
+                                <option value="classic" data-image="images/nescafe/classic.jpg" data-product-name="Nescafe Classic">Classic</option>
+                                <option value="creamylatte" data-image="images/nescafe/creamylatte.jpg" data-product-name="Nescafe Creamy Latte">Creamy Latte</option>
+                                <option value="brown-single" data-image="images/nescafe/Nescafe-Brown-Single.png" data-product-name="Nescafe Brown Coffee">Brown Coffee</option>
+                                <option value="original" data-image="images/nescafe/original.jpg" data-product-name="Nescafe Original">Original</option>
+                            </select>
+                        </div>
+                        
+                        <strong class="price">₱15.00</strong>
+                    </div>
+                    <a class="details-link" href="products/nescafe.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-noodles">
+                    <span class="product-tag">Merienda pick</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/pancit canton/pancit.jpg" alt="Lucky Me instant noodles">
+                    </div>
+                    <h3 class="variant-name">Lucky Me Pancit Canton</h3>
+                    <p>Instant Noodles for busy days</p>
+                    <div class="product-info">
+                        <div>
+                            <label class="variant-label" for="noodles-variant">Flavor</label>
+                            <select id="noodles-variant" class="variant-select" name="Pancit Canton-variant">
+                                <option value="Calamansi" data-image="images/pancit canton/pancit.jpg" data-product-name="Lucky Me Pancit Canton Calamansi">Pancit Canton Calamansi</option>
+                                <option value="Chilimansi" data-image="images/pancit canton/chilimansi.jpg" data-product-name="Lucky Me Pancit Canton Chilimansi">Pancit Canton Chilimansi</option>
+                                <option value="Extrahot" data-image="images/pancit canton/extrahot.jpg" data-product-name="Lucky Me Pancit Canton Extra Hot">Pancit Canton Extra Hot</option>
+                                <option value="Original" data-image="images/pancit canton/original.jpg" data-product-name="Lucky Me Pancit Canton Original">Pancit Canton Original</option>
+                                <option value="SweetSpicy" data-image="images/pancit canton/sweetspicy.jpg" data-product-name="Lucky Me Pancit Canton Sweet & Spicy">Pancit Canton Sweet & Spicy</option>
+                            </select>
+                        </div>
+                        <strong class="price">₱15.00</strong>
+                    </div>
+                    <a class="details-link" href="products/pancit-canton.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-yosi">
+                    <span class="product-tag">Neighborhood staple</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/marlboro/red.jpg" alt="Yosi cigarette pack">
+                    </div>
+                    <h3 class="variant-name">Marlboro Red</h3>
+                    <p>A familiar everyday choice</p>
+                    <div class="product-info">
+                        <div>
+                            <label class="variant-label" for="yosi-variant">Variant</label>
+                            <select id="yosi-variant" class="variant-select" name="Marlboro-variant">
+                                <option value="Red" data-image="images/marlboro/red.jpg" data-product-name="Marlboro Red">Marlboro Red</option>
+                                <option value="Gold" data-image="images/marlboro/gold.jpg" data-product-name="Marlboro Gold">Marlboro Gold</option>
+                                <option value="Blue" data-image="images/marlboro/blue.png" data-product-name="Marlboro Blue">Marlboro Blue</option>
+                                <option value="Black" data-image="images/marlboro/black.png" data-product-name="Marlboro Black">Marlboro Black</option>
+                            </select>
+                        </div>
+                        <strong class="price">₱11.00</strong>
+                    </div>
+                    <a class="details-link" href="products/marlboro.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-gcash">
+                    <span class="product-tag">E-wallet Service</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/gcash.jpg" alt="Gcash wallet">
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Gcash Cash in / Cash out</h3>
+                            <p> Convenient and secure digital wallet</p>
+                        </div>
+                        <strong class="price">Varies</strong>
+                    </div>
+                    <button class="add-button" type="button">Avail Service <span>+</span></button>
+                </article>
+
+                <article class="product-card product-load">
+                    <span class="product-tag">Sim load Services</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/load.jpg" alt="Load services">
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Sim Load</h3>
+                            <p>Top up your mobile credit anytime, anywhere</p>
+                        </div>
+                        <strong class="price">Varies</strong>
+                    </div>
+                    <button class="add-button" type="button">Avail Service <span>+</span></button>
+                </article>
+
+                <article class="product-card product-seasoning">
+                    <span class="product-tag">Kitchen essential</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/magic sarap.jpg" alt="Maggi seasoning">
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Magic Sarap</h3>
+                            <p>Enhance the flavor of your dishes</p>
+                        </div>
+                        <strong class="price">5.00</strong>
+                    </div>
+                    <a class="details-link" href="products/magic-sarap.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-chippy">
+                    <span class="product-tag">Snack time</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/chippy/bbq.jpg" alt="Chippy snack">
+                    </div>
+                    <h3 class="variant-name">Chippy Barbeque Flavored Corned Chip</h3>
+                    <p>A crispy and flavorful snack</p>
+                    <div class="product-info">
+                        <div>
+                            <label class="variant-label" for="chippy-variant">Flavor</label>
+                            <select id="chippy-variant" class="variant-select" name="Chippy-variant">
+                                <option value="Barbeque" data-image="images/chippy/bbq.jpg" data-product-name="Chippy Barbeque Flavored Corned Chip">Barbeque</option>
+                                <option value="ChiliCheese" data-image="images/chippy/chilicheese.jpg" data-product-name="Chippy Chili Cheese Flavored Corned Chip">ChiliCheese</option>
+                                <option value="Garlic&Vinegar" data-image="images/chippy/garlic.jpg" data-product-name="Chippy Garlic&Vinegar Flavored Corned Chip">Garlic&Vinegar</option>
+                                <option value="less salt" data-image="images/chippy/less salt.jpg" data-product-name="Chippy Less Salt Flavored Corned Chip">Less Salt</option>
+                            </select>
+                        </div>
+
+                        <strong class="price">₱10.00</strong>
+                    </div>
+                    <a class="details-link" href="products/chippy.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-nova">
+                    <span class="product-tag">Snack Time!</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/nova/cheddar cheese.jpg" alt="Nova snack">
+                    </div>
+                        <h3 class="variant-name">Nova Cheddar Cheese Flavored Chip</h3>
+                        <p>Novaaaaa!</p>
+                    <div class="product-info">
+                        <div>
+                         <label class="variant-label " for="nova-variant">Flavor</label>
+                            <select id="nova-variant" class="variant-select" name="Nova-variant">
+                                <option value="Cheddar Cheese" data-image="images/nova/cheddar cheese.jpg" data-product-name="Nova Cheddar Cheese Flavored Chip">Cheddar Cheese</option>
+                                <option value="Barbeque" data-image="images/nova/bbq.jpg" data-product-name="Nova Barbeque Flavored">Barbeque</option>
+                                <option value="Jalapeno" data-image="images/nova/jalapeno.png" data-product-name="Nova Jalapeno Flavored Chip">Jalapeno</option>
+                                <option value="Nacho Cheese" data-image="images/nova/nacho chees.jpg" data-product-name="Nova Nacho Cheese Flavored Chip">Nacho Cheese</option>
+                                <option value="Sweet Corn" data-image="images/nova/sweet corn.jpg" data-product-name="Nova Sweet Corn Flavored Chip">Sweet Corn</option>
+                                <option value="SweetChili" data-image="images/nova/sweetchili.png" data-product-name="Nova Sweet Chili Flavored Chip">SweetChili</option>
+                            </select>   
+                        </div>
+                        
+                        <strong class="price">₱13.00</strong>
+                    </div>
+                    <a class="details-link" href="products/nova.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-piattos">
+                    <span class="product-tag">Snack Time!</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/piattos/cheese.jpg" alt="Piattos snack">
+                    </div>
+                        <h3 class="variant-name">Piattos Cheese Flavored Chip</h3>
+                        <p>Piattos!</p>
+                    <div class="product-info">
+                        <div>
+                            <label class="variant-label" for="piattos-variant">Flavor</label>
+                            <select id="piattos-variant" class="variant-select" name="Piattos-variant">
+                                <option value="Cheese" data-image="images/piattos/cheese.jpg" data-product-name="Piattos Cheese Flavored Chip">Cheese</option>
+                                <option value="Sour&Cream" data-image="images/piattos/sourcream.jpg" data-product-name="Piattos Sour&Cream Flavored Chip">Sour & Cream</option>
+                                <option value="Redhouse Barbeque" data-image="images/piattos/redhouse bbq.jpg" data-product-name="Piattos Redhouse Barbeque Flavored Chip">RedhouseBarbeque</option>
+                                <option value="Roasted Beef" data-image="images/piattos/roast beef.jpg" data-product-name="Piattos Roasted Beef Flavored Chip">Roasted Beef</option>
+                                <option value="Nacho Pizza" data-image="images/piattos/nacho pizza.jpg" data-product-name="Piattos Nacho Pizza Flavored Chip">Nacho Pizza</option>
+                            </select>
+                        </div>
+
+                        <strong class="price">₱15.00</strong>
+                    </div>
+                    <a class="details-link" href="products/piattos.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-mangtomas">
+                    <span class="product-tag">Sauce</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/mang tomas.jpg" alt="Dipping sauce">
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Mang Tomas</h3>
+                            <p>A delicious and Filipino made dipping sauce</p>
+                        </div>
+                        <strong class="price">₱6.00</strong>
+                    </div>
+                    <a class="details-link" href="products/mang-tomas.html">View details <span>↗</span></a>
+                    <button class="add-button" type="button">Add to basket <span>+</span></button>
+                </article>
+
+                <article class="product-card product-rene">
+                    <span class="product-tag">Aray Ko Po!</span>
+                    <div class="product-image">
+                        <!-- Updated Image path -->
+                        <img src="images/rene.jpg" alt="Aray Ko Po!">
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Just A Kid With A Big Dream</h3>
+                            <p>Milo Energy Drink</p>
+                        </div>
+                        <strong class="price">₱12.00</strong>
+                    </div>
+                    <button class="add-button" type="button" disabled>Not available <span>×</span></button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section" id="story" aria-labelledby="story-title">
+            <div class="story-label">01 / About the store</div>
+            <div>
+                <h2 id="story-title">A Website<br>that feels like home.</h2>
+                <p>Hi, I am Javie Fababeir, the owner of Kuya Rudy Store. Nah im kidding, im not actually the owner but i just made this website because my prof told us too its supposed to be an basic html activity but i want to make it to look good. so thats how i come up with this website. please dont take this website seriously because im trying my best to learn coding and more!! feel free to browse my mini project enjoy!.</p>
+                <a class="text-link" href="#contact">Say hello <span>↗</span></a>
+            </div>
+            <div class="story-badge">Since<br><strong>2006</strong></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <strong>KUYA RUDY STORE</strong>
+        <span>Come by for a snack, stay for the kwento.</span>
+        <span>© 2024 • Made in the neighborhood</span>
+    </footer>
+
+    <!-- Updated JS path -->
+    <script src="js/script.js"></script>
+</body>
+</html>
