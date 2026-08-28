@@ -762,6 +762,166 @@ footer strong {
 }
 
 /* =========================================
+   11. CONTACT FORM
+   ========================================= */
+.contact-form-section {
+    margin-top: 60px;
+    padding-top: 50px;
+    border-top: 1px solid var(--line);
+}
+
+.contact-form-section h2 {
+    margin-bottom: 10px;
+    font-size: clamp(32px, 4vw, 48px);
+}
+
+.contact-form-intro {
+    margin: 0 0 30px;
+    color: #52635a;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.contact-form fieldset {
+    border: 1px solid var(--line);
+    padding: 30px;
+    background: #fffdf7;
+}
+
+.contact-form legend {
+    padding: 0 10px;
+    color: var(--green);
+    font: 700 11px 'DM Sans', sans-serif;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font: 500 13px 'DM Sans', sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+    border-color: var(--red);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #a3a89e;
+}
+
+.contact-form select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23172b25' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: #fffdf5;
+    font: 700 12px 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.submit-button:hover {
+    background: var(--green);
+    border-color: var(--green);
+}
+
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Validation error state */
+.input-error {
+    border-color: var(--red) !important;
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+}
+
+.field-error {
+    display: block;
+    margin: -14px 0 16px;
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+/* Success message */
+.form-success-message {
+    display: none;
+    margin-top: 20px;
+    padding: 16px 20px;
+    border: 1px solid var(--green);
+    background: #e8f0eb;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.form-success-message.visible {
+    display: block;
+}
+
+/* Submission error message */
+.form-error-message {
+    display: none;
+    margin-top: 20px;
+    padding: 16px 20px;
+    border: 1px solid var(--red);
+    background: #fde8e4;
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.form-error-message.visible {
+    display: block;
+}
+
+/* =========================================
     10. MOBILE RESPONSIVENESS
    ========================================= */
 @media (max-width: 700px) {
@@ -874,5 +1034,14 @@ footer strong {
     footer { 
         flex-direction: column; 
         gap: 10px; 
+    }
+
+    .contact-form fieldset {
+        padding: 22px 18px;
+    }
+
+    .form-success-message,
+    .form-error-message {
+        font-size: 13px;
     }
 }

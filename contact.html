@@ -48,6 +48,41 @@
                 <a href="https://maps.app.goo.gl/c2rMLQt6RMFxYf1n6" target="_blank" rel="noopener noreferrer">Zone 071, 702 Mercedes St, Ermita, Manila, 1000 Metro Manila</a>
             </div>
         </div>
+
+        <section class="contact-form-section">
+            <p class="eyebrow">May tanong po?</p>
+            <h2>Send us a message</h2>
+            <p class="contact-form-intro">How can we help you? Fill out the form below and we'll get back to you soon!</p>
+            <form class="contact-form" action="https://formspree.io/f/mjyvvkyd" method="POST">
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Juan Dela Cruz">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Choose a topic...</option>
+                        <option value="product-inquiry">Product Inquiry</option>
+                        <option value="order-reservation">Order or Reservation</option>
+                        <option value="gcash-cashin-cashout">GCash Cash In / Cash Out</option>
+                        <option value="mobile-load">Mobile Load</option>
+                        <option value="store-services">Store Services</option>
+                        <option value="other">Other Concern</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+
+                    <button type="submit" class="submit-button">Send message</button>
+                </fieldset>
+            </form>
+            <div class="form-success-message" role="status">Salamat! Your message has been sent. We'll get back to you soon!</div>
+            <div class="form-error-message" role="alert"></div>
+        </section>
     </main>
 
     <footer id="contact">
@@ -55,5 +90,6 @@
         <span>Come by for a snack, stay for the kwento.</span>
         <span>© 2006 • Made in the neighborhood</span>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
