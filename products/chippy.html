@@ -55,6 +55,59 @@
         </div>
     </main>
 
+    <section class="enquiry-section">
+            <p class="eyebrow">Interested in ordering?</p>
+            <h2>Order <em>Enquiry</em></h2>
+            <p class="enquiry-intro">Want to stock up on Chippy? Fill out the form below and we'll get your order sorted.</p>
+            <form class="enquiry-form" action="#" method="POST">
+                <fieldset>
+                    <legend>Order details</legend>
+
+                    <label for="qty">How many bags?</label>
+                    <input type="number" id="qty" name="quantity" min="1" max="20" required>
+
+                    <fieldset class="radio-group">
+                        <legend>Delivery method</legend>
+                        <label class="radio-label">
+                            <input type="radio" name="delivery" value="pick-up" required>
+                            Pick up from store
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="delivery" value="local-delivery">
+                            Local delivery (within 3 km)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="delivery" value="courier">
+                            Courier / ship to address
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="checkbox-group">
+                        <legend>Optional extras</legend>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extras" value="gift-wrap">
+                            Gift wrapping (+₱5)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extras" value="express">
+                            Express handling (+₱10)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extras" value="receipt">
+                            Print a receipt for me
+                        </label>
+                    </fieldset>
+
+                    <label for="enquiry-email">Your email</label>
+                    <input type="email" id="enquiry-email" name="email" required placeholder="you@example.com">
+
+                    <button type="submit" class="submit-button">Send enquiry</button>
+                </fieldset>
+            </form>
+            <div class="form-success-message" role="status">Salamat! Your enquiry has been sent. We'll reply soon!</div>
+            <div class="form-error-message" role="alert"></div>
+        </section>
+
     <footer id="contact">
         <strong>KUYA RUDY STORE</strong>
         <span>Come by for a snack, stay for the kwento.</span>
