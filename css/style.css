@@ -257,16 +257,19 @@ h2 {
     text-align: right; 
 }
 
+/* Flexbox makes the grid responsive with no media queries:
+   cards wrap to the next row whenever the row can't fit them */
 .product-grid { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 18px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 24px; 
 }
 
 .product-card { 
     position: relative; 
     display: flex; 
     flex-direction: column; 
+    flex: 1 1 240px; /* grow to fill, shrink if needed, aim for 240px */
     padding: 18px; 
     background: #fffdf7; 
     border: 1px solid var(--line); 
@@ -1127,11 +1130,6 @@ footer strong {
 
     .section-note { 
         display: none; 
-    }
-
-    .product-grid { 
-        grid-template-columns: 1fr; 
-        gap: 16px; 
     }
 
     .product-image { 
