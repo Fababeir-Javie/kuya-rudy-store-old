@@ -35,6 +35,10 @@ a {
    2. TOP ANNOUNCEMENT BAR
    ========================================= */
 .announcement { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 56px;
     padding: 10px 5vw; 
     background: var(--red); 
     color: #fff9ea; 
@@ -52,20 +56,36 @@ a {
 /* =========================================
    3. NAVIGATION HEADER
    ========================================= */
+/* Exactly two direct children: the logo (far left) and 
+   .header-right (far right) so space-between splits them to the ends */
 .site-header { 
     display: flex; 
-    align-items: center; 
     justify-content: space-between; 
+    align-items: center; 
     max-width: 1280px; 
     margin: auto; 
     padding: 25px 5vw; 
 }
 
-nav { 
-    display: flex; 
-    gap: 34px; 
-    font-size: 12px; 
-    font-weight: 700; 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.header-right nav {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* The nav's ul is its own flex container with a gap between links.
+   No display: inline-block on the li — flexbox replaces it. */
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav a { 
