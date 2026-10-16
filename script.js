@@ -43,8 +43,47 @@ if (shelfTarget) {
         productCount + ' items on the shelf • shelf value ₱' + runningTotal.toFixed(2);
 }
 
-// 6. Labelled console messages
+// 6. Decide whether a product is in stock
+const stockCount = 12;
+let stockMessage;
+if (stockCount > 10) {
+    stockMessage = 'In stock';
+} else if (stockCount >= 1 && stockCount <= 10) {
+    stockMessage = 'Only a few left';
+} else {
+    stockMessage = 'Sold out';
+}
+
+const stockTarget = document.getElementById('stock-status');
+if (stockTarget) {
+    stockTarget.textContent = stockMessage;
+}
+
+// 7. Calculate delivery and final order total
+const orderTotal = 250;
+const isMember = true;
+const qualifiesForFreeDelivery = orderTotal >= 200 && isMember === true;
+const deliveryFee = qualifiesForFreeDelivery ? 0 : 150;
+const finalTotal = orderTotal + deliveryFee;
+
+const deliveryTarget = document.getElementById('delivery-total');
+if (deliveryTarget) {
+    deliveryTarget.textContent = 'Final total: ₱' + finalTotal.toFixed(2);
+}
+
+// 8. Show whether the shop is open today
+const isShopOpen = true;
+const shopStatus = isShopOpen ? 'Open today' : 'Closed today';
+const shopStatusTarget = document.getElementById('shop-status');
+if (shopStatusTarget) {
+    shopStatusTarget.textContent = shopStatus;
+}
+
+// 9. Labelled console messages
 console.log('shop name:', shopName);
 console.log('current year:', currentYear);
 console.log('running total:', runningTotal);
 console.log('products on shelf:', productCount);
+console.log('stock status:', stockMessage);
+console.log('final total:', finalTotal);
+console.log('shop status:', shopStatus);
