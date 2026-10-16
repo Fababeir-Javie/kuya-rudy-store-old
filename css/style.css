@@ -249,6 +249,14 @@ h2 {
     line-height: .95; 
 }
 
+.shelf-stat { 
+    margin: 14px 0 0; 
+    color: var(--green); 
+    font-size: 13px; 
+    font-weight: 700; 
+    letter-spacing: .3px; 
+}
+
 .section-note { 
     margin: 0; 
     color: #65736a; 
